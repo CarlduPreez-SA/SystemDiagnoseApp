@@ -44,8 +44,8 @@ public sealed class MainViewModel : ObservableObject
     public RelayCommand ExportCommand { get; }
     public RelayCommand OpenActionLogCommand { get; }
 
-    public string Status { get => _status; private set => Set(ref _status, value); }
-    public double Progress { get => _progress; private set => Set(ref _progress, value); }
+    public string Status { get => _status; set => Set(ref _status, value); }
+    public double Progress { get => _progress; set => Set(ref _progress, value); }
 
     public bool IsRunning
     {
